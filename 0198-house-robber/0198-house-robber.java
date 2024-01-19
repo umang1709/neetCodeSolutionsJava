@@ -5,7 +5,7 @@ class Solution {
         //first with O(N)time and space and then just O(N) time and O(1) space.
         int len = nums.length;
         if(len<2)return nums[0];
-        int[] dp = new int[len];
+       // int[] dp = new int[len];
         int r1 = nums[0];
         int r2 = Math.max(nums[0],nums[1]);
         for(int i=2;i<len;i++){
