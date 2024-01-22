@@ -10,10 +10,11 @@ class Solution {
         //at last will check if int array contains only 0 then return true else false.
         //so O(n+n+n), O(n) time will be taken.
         int[] alpha = new int[26];
-        for(char ch:s.toCharArray())
-            alpha[ch-'a']++;
-        for(char ch:t.toCharArray())
-            alpha[ch-'a']--;
+        for(int i=0;i<s.length();i++){
+            alpha[s.charAt(i)-'a']++;
+            alpha[t.charAt(i)-'a']--;
+        }
+        
         for(int i:alpha)
             if(i>0)return false;
         
