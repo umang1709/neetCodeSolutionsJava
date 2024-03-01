@@ -10,17 +10,20 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        if(head == null || head.next == null) return head;
+        //will use 3pointers to solve it
+        //curr = head; prev = null;
+        //tempNext = curr.next;
+        // curr.next = prev, prev = curr, curr.next = tempNext;
         
-        ListNode prev = null;
         ListNode curr = head;
-        
+        ListNode prev = null;
         while(curr != null){
-            ListNode nextTemp = curr.next ;
+            ListNode tempNext = curr.next;
             curr.next = prev;
             prev = curr;
-            curr = nextTemp;
+            curr = tempNext;
         }
-        return prev;
+        head = prev;
+        return head;
     }
 }
