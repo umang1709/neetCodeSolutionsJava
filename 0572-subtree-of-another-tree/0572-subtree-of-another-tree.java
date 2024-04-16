@@ -15,6 +15,8 @@
  */
 class Solution {
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+    //solved using recursive DFS approach.
+        //checking subRoot==null as null would be a subtree for any tree.
       if(subRoot==null || isSameTree(root,subRoot))return true;
       if(root==null) return false;
       return  isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
