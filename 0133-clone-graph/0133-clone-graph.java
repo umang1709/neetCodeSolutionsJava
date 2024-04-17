@@ -19,17 +19,19 @@ class Node {
 */
 
 class Solution {
-    public HashMap<Integer, Node> map = new HashMap<>();
     public Node cloneGraph(Node node) {
+        //recursive DFS way , 2nd way of code
         if(node == null) return null;
+        Map<Integer, Node> map = new HashMap<>();
+        return cloneGraph(node, map);
+    }
+    private Node cloneGraph(Node node, Map<Integer, Node> map){
         if(map.containsKey(node.val))return map.get(node.val);
-            
-        Node newNode = new Node(node.val, new ArrayList<Node>());
-        map.put(node.val,newNode);
-        for(Node n : node.neighbors){
-          newNode.neighbors.add(cloneGraph(n));
+        Node copy = new Node(node.val, new ArrayList<Node>());
+        map.put(node.val, copy);
+        for(Node neighbor: node.neighbors){
+            copy.neighbors.add(cloneGraph(neighbor, map));
         }
-        return newNode;
-        
+        return copy;
     }
 }
