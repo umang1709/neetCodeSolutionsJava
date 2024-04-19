@@ -1,21 +1,18 @@
 class Solution {
     public int maxArea(int[] height) {
-        //two pointers solution will be used 
-        //if height[l] < height[r] l++ else r--;
-        //as we need max height in both right and left to have max area.
-        int maxArea = 0;
-        int left = 0;
-        int right = height.length-1;
-    while(left<right){
-            int localMax = 0;
-            int yAxis =  Math.min(height[left],height[right]);
-            int xAxis = right - left;
-            localMax = xAxis * yAxis;
-            maxArea = Math.max(localMax,maxArea);
-            if(height[left]<height[right])left++;
-            else right--;
+        //brute force will take O(n^2)-- by checking each pair with two nested loops.
+        //optimal solution will take O(n) -- using two pointers.
+        int l = 0;
+        int r = height.length - 1;
+        int res = Integer.MIN_VALUE;
+        int area = 0;
+        while(l<r){
+            area = (r-l) * Math.min(height[l], height[r]);
+            res = Math.max(res,area);
+            if(height[l]<height[r])l++;
+            else r--;
         }
-        return maxArea;
+        return res;
         
     }
 }
