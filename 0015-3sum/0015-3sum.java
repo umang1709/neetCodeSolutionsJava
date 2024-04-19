@@ -1,41 +1,30 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
+        //more simplified code::
         List<List<Integer>> ans = new ArrayList<>();
-        Arrays.sort(nums); //sorting the input array to eradicate the duplicates
-        for(int i =0;i<nums.length-2;i++){
-            if(i!=0 && nums[i]==nums[i-1])continue;
-            int target = 0 - (nums[i]);
-            List<List<Integer>>temp = getTwoSum(nums,target,i+1);
-            if(temp.size() !=0){
-                for(List<Integer> t : temp){
-                    t.add(nums[i]);
-                    ans.add(t);
-                }
+        Arrays.sort(nums);
+        for(int i=0;i<nums.length-2;i++){
+            if(i==0 || (i>0 && nums[i]!=nums[i-1])){
+            int target = 0-nums[i];
+            int l = i+1;
+            int r = nums.length-1;
+            while(l<r){
+                if(nums[l]+nums[r]==target){
+                    List<Integer> temp = new ArrayList<>();
+                    temp.add(nums[i]);
+                    temp.add(nums[l]);
+                    temp.add(nums[r]);
+                    ans.add(temp);
+                    while(l<r && (nums[l]==nums[l+1]))l++;
+                    while(l<r && (nums[r]==nums[r-1]))r--;
+                    l++;
+                    r--;
+                } else if(nums[l]+nums[r] > target)r--;
+                  else if(nums[l]+nums[r] < target)l++;
             }
-        }
+        } 
+            }
+        
         return ans;
-        
-        
-    }
-    private List<List<Integer>> getTwoSum(int[] arr, int target, int j){
-        int l = j;
-        int r = arr.length-1;
-        int[] nums = Arrays.copyOf(arr,arr.length);
-        List<List<Integer>> answer = new ArrayList<>();
-        while(l<r){
-            int sum = nums[l]+nums[r];
-            if(sum==target){
-                List<Integer> tem = new ArrayList<>();
-                tem.add(nums[l]);
-                tem.add(nums[r]);
-                answer.add(tem);
-                while(l<r && nums[l]==nums[l+1])l++;
-                while(l<r && nums[r]==nums[r-1])r--;
-                l++;
-                r--;
-            }else if(sum<target)l++;
-            else if(sum>target)r--;
-        }
-        return answer;
     }
 }
