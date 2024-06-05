@@ -1,31 +1,13 @@
 class Solution {
     public int maxProfit(int[] prices) {
-        
-        int maxProfit = 0;
         int n = prices.length;
-        int l,r;
-        l=0;r=1;
-        while(r < n){
-            if(prices[l]<=prices[r])
-            {
-                maxProfit = Math.max(maxProfit,prices[r]-prices[l]);
-            }else { 
-                l=r ;
-                   }
-            r++;
+        int max = 0;
+        int l = 0;
+        int r = 1;
+        while(l < n && r < n){
+            if(prices[l] <= prices[r]){max=Math.max(max,prices[r]-prices[l]);r++;}
+            else if(prices[l] > prices[r]){l=r;r++;}
         }
-        return maxProfit;
+        return max;
     }
 }
-
-//strategy is to use 2 pointers
-//till n loop
-    //have l=0, r  = 1;
-    //maxProfit
-   //if num[l]>=num[r]
-        //l=r;r++;
-  //else if (num[l]<num[r])
-        //profit=num[r]-num[l]
-        //maxProfit = max(profit,maxProfit);
-        //r++;
-        
