@@ -6,6 +6,7 @@ This Repo is for neetCode DSA Questions and solution
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0001-two-sum) |
+| [0053-maximum-subarray](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0053-maximum-subarray) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0217-contains-duplicate](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0238-product-of-array-except-self) |
@@ -17,6 +18,7 @@ This Repo is for neetCode DSA Questions and solution
 # Dynamic Programming
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0053-maximum-subarray) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0121-best-time-to-buy-and-sell-stock) |
 # Sorting
 |  |
@@ -26,3 +28,7 @@ This Repo is for neetCode DSA Questions and solution
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0238-product-of-array-except-self) |
+# Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0053-maximum-subarray) |
