@@ -12,11 +12,13 @@ This Repo is for neetCode DSA Questions and solution
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0217-contains-duplicate](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0238-product-of-array-except-self) |
+| [0268-missing-number](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0268-missing-number) |
 # Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0001-two-sum) |
 | [0217-contains-duplicate](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0217-contains-duplicate) |
+| [0268-missing-number](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0268-missing-number) |
 # Dynamic Programming
 |  |
 | ------- |
@@ -27,6 +29,7 @@ This Repo is for neetCode DSA Questions and solution
 | ------- |
 | [0015-3sum](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0015-3sum) |
 | [0217-contains-duplicate](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0217-contains-duplicate) |
+| [0268-missing-number](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0268-missing-number) |
 # Prefix Sum
 |  |
 | ------- |
@@ -44,3 +47,15 @@ This Repo is for neetCode DSA Questions and solution
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0011-container-with-most-water) |
+# Math
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0268-missing-number) |
+# Binary Search
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0268-missing-number) |
+# Bit Manipulation
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0268-missing-number) |
