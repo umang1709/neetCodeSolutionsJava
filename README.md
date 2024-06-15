@@ -30,6 +30,7 @@ This Repo is for neetCode DSA Questions and solution
 | [0015-3sum](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0015-3sum) |
 | [0217-contains-duplicate](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0268-missing-number) |
+| [0295-find-median-from-data-stream](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0295-find-median-from-data-stream) |
 # Prefix Sum
 |  |
 | ------- |
@@ -43,6 +44,7 @@ This Repo is for neetCode DSA Questions and solution
 | ------- |
 | [0011-container-with-most-water](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0015-3sum) |
+| [0295-find-median-from-data-stream](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0295-find-median-from-data-stream) |
 # Greedy
 |  |
 | ------- |
@@ -59,3 +61,15 @@ This Repo is for neetCode DSA Questions and solution
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0268-missing-number) |
+# Design
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0295-find-median-from-data-stream) |
+# Heap (Priority Queue)
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0295-find-median-from-data-stream) |
+# Data Stream
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/umang1709/neetCodeSolutionsJava/tree/master/0295-find-median-from-data-stream) |
